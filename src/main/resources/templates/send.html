@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button, input, textarea {
+            border: 1px solid #ee00ff;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #ee00ff;
+            color: white;
+        }
+        button {
+            transition-duration: 0.4s;
+            padding: 15px;
+            text-align: center;
+        }
+        button, div, h2 {
+            color: #ff7dff;
+        }
+        #message {
+            height: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <div>
+            <label for="receiver">Receiver:</label>
+            <input name="receiver" id="receiver" value="">
+        </div>
+        <div>
+            <label for="subject">Subject:</label>
+            <input name="subject" id="subject" value="">
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+        </div>
+        <button>Mail Gönder</button>
+    </form>
+</body>
+</html>
